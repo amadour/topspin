@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TopSpin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0h-Fl-b84" customClass="TopSpinButton" customModule="TopSpin" customModuleProvider="target">
+                                <rect key="frame" x="168" y="433" width="78" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.63921568630000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <inset key="contentEdgeInsets" minX="13" minY="4.5" maxX="13" maxY="4.7000000000000002"/>
+                                <state key="normal" title="2,29 €"/>
+                                <state key="selected" title=" "/>
+                                <connections>
+                                    <action selector="toggleWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NMf-Ka-xKa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="e0h-Fl-b84" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ed2-0d-U5b"/>
+                            <constraint firstItem="e0h-Fl-b84" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pGw-VM-QJ9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="saJ-Hy-l59" appends="YES" id="JzT-UW-Qgi"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="topSpinButton" destination="e0h-Fl-b84" id="vPr-FP-cSE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="saJ-Hy-l59">
+                    <connections>
+                        <action selector="toggleWithSender:" destination="BYZ-38-t0r" id="LK7-RU-iH4"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-403" y="58"/>
+        </scene>
+    </scenes>
+</document>
